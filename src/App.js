@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import Cards from './components/Cards';
+import Navigation from './components/Navigation';
+import Sidebar from './components/Sidebar';
+import { useState } from 'react';
+import './App.css'
 
 function App() {
+  let [sidebarStatus, setSidebarStatus] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+      sidebarStatus 
+      ?  
+      <div className='layout'>
+        <div className='side'><Sidebar/></div>
+        <div className='main'> 
+          <div> <Navigation sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus}/> </div>
+          <div> <Cards/> </div>
+        </div>
+      </div>
+      :
+      <div className='layout2'>
+        <div> <Navigation sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus}/> </div>
+        <div> <Cards/> </div>
+      </div>
+      }  
+
     </div>
   );
 }
+
 
 export default App;

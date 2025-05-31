@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 70px;
+  background-color: #ffffff;
+  border: none;
+  gap: 25px
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu-icon {
+  width: 22px;
+  height: 25px;
+  color: #202224;
+  opacity: 89.8%;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  height: 38px;
+  width: 388px;
+  border: 0.6px solid #d5d5d5;
+  border-radius: 19px;
+  background-color: #f5f6fa;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  opacity: 50%;
+  transform: translateY(-50%);
+  width: 15.01px;
+  height: 15.01px;
+  color: black;
+}
+
+.search-input {
+  padding-left: 50px;
+  height: 38px;
+  width: 388px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-input::placeholder {
+    height: 19px;
+    width: 43px;
+    opacity: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #202224;
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 32px;             
+}
+
+
+.icon-wrapper {
+  padding-top: 7px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.bell-icon {  
+  width: 29px;
+  height: 30.5px;
+}
+
+.badge {
+  position: absolute;
+  top: -2px;            
+  right: -3px;      
+  background-color: red;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;      
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0.50px;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: -10px;
+}
+
+.flag-icon {
+  width: 40px;
+  height: 27px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.lang-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #646464;
+  margin: 0;           
+}
+
+
+.chevron-icon-lang {
+  width: 18px;
+  height: 18px;
+  color: #646464; 
+  cursor: pointer;        
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.user-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #202224;
+  margin: 0;
+}
+
+.user-role {
+  font-size: 12px;
+  font-weight: 400;
+  color: #565656;
+  margin: 0;
+}
+
+.chevron-icon-user {
+  width: 18px;
+  height: 18px;
+  color: #646464;  
+  border: 0.3px solid #c9c4c4ee;
+  border-radius: 50%;
+  cursor: pointer;
+}
