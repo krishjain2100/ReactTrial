@@ -8,6 +8,13 @@
   justify-content: flex-start;
 }
 
+.wrapper {
+    width: 240px;
+    border-left: 4px solid #4880FF;
+    border-radius: 4px;
+}
+
+
 .logo {
     display: flex;
     justify-content: center;
@@ -72,6 +79,7 @@
 .sidebar-item.active {
     background-color: #4880FF;
     color: white;
+    
 }
 
 .sidebar-item.active .icon {

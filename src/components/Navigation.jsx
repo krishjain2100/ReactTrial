@@ -1,6 +1,5 @@
-// Navigation.jsx
 import React from 'react'
-import { Menu, Search, ChevronDown } from 'lucide-react'
+import {Menu, Search, ChevronDown} from 'lucide-react'
 import './styles/Navigation.css'
 
 import bellIcon from '../assets/icon.jpg'

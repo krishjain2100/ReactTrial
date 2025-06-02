@@ -1,17 +1,17 @@
 import React from 'react';
 import './styles/Card.css';
 
-const Card = ({planType, price, idx}) => {
-  const features = [
-    "Free Setup",
-    "Bandwidth Limit 10 GB",
-    "20 User Connection",
-    "Analytics Report",
-    "Public API Access",
-    "Plugins Integration",
-    "Custom Content Management"
-  ];
+const features = [
+  "Free Setup",
+  "Bandwidth Limit 10 GB",
+  "20 User Connection",
+  "Analytics Report",
+  "Public API Access",
+  "Plugins Integration",
+  "Custom Content Management"
+];
 
+const Card = ({planType, price, idx}) => {
   return (
     <div className="pricing-card">
       <h2 className="title">{planType}</h2>
@@ -20,9 +20,7 @@ const Card = ({planType, price, idx}) => {
       <hr className="divider" />
       <ul className="features">
         {features.map((feature, index) => (
-          <li key={index} className={index>idx ? 'disabled' : ''}>
-            {feature}
-          </li>
+          <li key={index} className={index>idx ? 'disabled' : ''}> {feature} </li>
         ))}
       </ul>
       <hr className="divider" />
